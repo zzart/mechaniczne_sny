@@ -1,0 +1,4 @@
+ofxOpenCv
+ofxGui
+ofxXmlSettings
+ofxFontStash

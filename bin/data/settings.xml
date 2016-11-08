@@ -1,0 +1,43 @@
+<Parameters>
+	<transparency>128</transparency>
+	<width>0.8</width>
+	<color>0, 1, 0, 255</color>
+<Parameters/>
+<stransparency>22</stransparency>
+	<swidth>2.7</swidth>
+	<scolor>49, 31, 0, 255</scolor>
+<random>20</random>
+	<srandom>255</srandom>
+<background>255</background>
+<c_transparency>0</c_transparency>
+	<c_radius>24.5</c_radius>
+<group>
+		<background>255</background>
+		<transparency>31</transparency>
+		<width>0</width>
+		<color>0, 0, 0, 255</color>
+		<random>1</random>
+		<stransparency>45</stransparency>
+		<swidth>1.9</swidth>
+		<scolor>85, 27, 24, 255</scolor>
+		<srandom>53</srandom>
+		<c_transparency>53</c_transparency>
+		<c_radius>10</c_radius>
+	<threshold>36</threshold>
+	<blob_size>50</blob_size>
+		<blob_points>2</blob_points>
+	<alpha>255</alpha>
+		<beta>-3283.18</beta>
+		<s1_threshold>200</s1_threshold>
+		<modulation>0.7</modulation>
+		<particle_color>0</particle_color>
+		<particle_fill>1</particle_fill>
+		<s2_threshold>20</s2_threshold>
+	<distance>1000</distance>
+	<line_height>1</line_height>
+		<mic_threshold>0.31</mic_threshold>
+		<font_size>34</font_size>
+	<font_color>255</font_color>
+		<font_alpha>255</font_alpha>
+	</group>
+</Parameters>
