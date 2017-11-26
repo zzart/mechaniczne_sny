@@ -265,7 +265,7 @@ void ofApp::scene2_setup(){
     //ofSetBackgroundAuto(false);
     //ofDisableAntiAliasing();
     ofEnableSmoothing();
-    ofSetFrameRate(30); // ?? 
+    ofSetFrameRate(30); // ??
 }
 
 void ofApp::scene2_update(){
@@ -434,7 +434,7 @@ void ofApp::pointCollecter(float x, float y ){
     }
 
     drawPoints.push_back(ofPoint(x,y));
-    
+
 
     if (lines.size() > 4000){
         lines.clear();
@@ -513,6 +513,7 @@ void ofApp::scene3_draw(){
 }
 //scene 4--------------------------------------------------------------
 void ofApp::scene4_setup(){
+    typewriter.load("typewriter-key-1.wav");
     soundLevel = 0;
     recording = true;
     soundStream.setup( this, 0, 1, 44100, 512, 4 );
@@ -556,9 +557,11 @@ void ofApp::scene4_draw(){
 
     // debug
     ofDrawBitmapString(ofToString(soundLevel), 30,40);
-    if (soundLevel > mic_threshold) {
+    if (ofGetKeyPressed()) {
+    //if (soundLevel > mic_threshold) {
         ofDrawBitmapString("Mechaniczne Sny", 30,55);
         typeKey();
+        typewriter.play();
     }
 }
 void ofApp::typeKey(){
@@ -576,7 +579,7 @@ void ofApp::typeKey(){
 	s = ss.str();
 	//std::cout << s << endl;
 	keyRecorded++;
-	ofSleepMillis(50); // sleep so we don't get double strokes
+	ofSleepMillis(100); // sleep so we don't get double strokes
 }
 void ofApp::audioReceived(float *input, int bufferSize, int nChannels){
     if (recording == true){

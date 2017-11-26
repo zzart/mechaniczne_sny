@@ -8,8 +8,8 @@
 #include <string>
 
 //#define _USE_VIDEO		// uncomment this to use Raspberry PI camera
-//#define _USE_LIVE_VIDEO		// uncomment this to use a live camera
-#define _USE_NETWORK_VIDEO		// uncomment this to use a live camera
+#define _USE_LIVE_VIDEO		// uncomment this to use a live camera
+//#define _USE_NETWORK_VIDEO		// uncomment this to use a live camera
 class Line {
     public:
         ofPoint a;
@@ -143,6 +143,7 @@ class ofApp : public ofBaseApp{
 		void typeKey();
 		bool recording;
 
+        ofSoundPlayer typewriter;
 		ofxFontStash font;
 		ofxFontStash unicodeFont;
 		ofxIntSlider line_height;
